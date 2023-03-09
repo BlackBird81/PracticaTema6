@@ -50,7 +50,7 @@ class UsersController {
         return ResponseEntity<User>(user, HttpStatus.OK)
     }
 
-    @PostMapping("/")
+    @PostMapping("")
     fun insertUser(@RequestBody user: User): ResponseEntity<User> {
 
         usersService.save(user)
